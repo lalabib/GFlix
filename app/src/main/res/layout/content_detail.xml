@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_detail">
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="4dp"
+        android:background="@drawable/corner_shape"
+        app:drawableStartCompat="@drawable/ic_star_rate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/rate"/>
+
+    <TextView
+        android:id="@+id/tv_rate_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="4dp"
+        android:background="@drawable/corner_shape"
+        app:layout_constraintStart_toEndOf="@id/tv_rate"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/rate_age"/>
+
+    <TextView
+        android:id="@+id/tv_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="4dp"
+        android:background="@drawable/corner_shape"
+        app:layout_constraintStart_toEndOf="@id/tv_rate_age"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/genre"/>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_genre"
+        tools:text="@tools:sample/lorem/random"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

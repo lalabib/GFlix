@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">G-Flix</string>
+
+    <!-- detail activity -->
+    <string name="rate">5.0</string>
+    <string name="rate_age">18+</string>
+    <string name="genre">Action</string>
+</resources>
